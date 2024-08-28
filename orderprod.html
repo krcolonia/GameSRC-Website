@@ -1,0 +1,186 @@
+<html>
+	<style>
+		::-webkit-scrollbar {
+		width: 5px;
+		}
+		::-webkit-scrollbar-track {
+		background: #303032;
+		border-radius:10px;
+		}
+		::-webkit-scrollbar-thumb {
+		background: #33D9EC;
+		border-radius:2.5px;
+		height:25px;
+		}
+		::-webkit-scrollbar-thumb:hover {
+		background: ##33D9EC;
+		}
+		@font-face { 
+		font-family:CoolveticaRg-Regular;
+		src:url('coolvetica rg.ttf');
+		}
+		img {
+		border-radius:10px;
+		}
+		#tb {
+		border-radius:10px;
+		box-shadow:2px 2px 3px;
+		}
+		#tbord {
+		border-radius:10px;
+		padding:5px 5px;
+		box-shadow:2px 2px 3px;
+		}
+		#tb2 {
+		border-radius:10px;
+		box-shadow:2px 2px 3px;
+		}
+		#tb2:hover {
+		background-color:#303032;
+		}
+		#button {
+		font-family:CoolveticaRg-Regular;
+		color:#33D9EC;
+		text-decoration:none;
+		padding:5px 5px;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+		font-size:34px;
+		}
+		#return {
+		font-family:CoolveticaRg-Regular;
+		color:#33D9EC;
+		text-decoration:none;
+		padding:5px 5px;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+		}
+		#tbp {
+		border-radius:10px;
+		box-shadow:2px 2px 3px;
+		background-image:linear-gradient(#121013,black);
+		width:640px;
+		height:344px;
+		}
+		#tdp {
+		padding:5px 5px;
+		}
+		#head {
+		color:#33D9EC;
+		font-family:CoolveticaRg-Regular;
+		font-size:25px;
+		text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+		} 
+		p {
+		font-family:CoolveticaRg-Regular;
+		color:#33D9EC;
+		text-shadow:-1px 0px black,0px 1px black,1px 0px black,-1px 0px black;
+		font-size:15px;
+		}
+		.ul  {
+		list-style-type:none;
+		font-family:CoolveticaRg-Regular;
+		color:#33D9EC;
+		padding:5px 5px;
+		text-shadow:-1px 0px black,0px 1px black,1px 0px black,-1px 0px black;
+		}
+	</style>
+<body bgcolor="#1D1E1C">
+<table id="tbp">
+	<td id="tdp">
+<br />	
+	<center><table id="tbord" bgcolor="#1D1E1C">
+	<td>
+	<p>To add any of the Games you'd like to order, please press the Video Game's title!</p>
+	<ul id="gameList" class="ul">
+<li></li>
+	</ul>
+	</td>
+	</table></center><br />
+		<table id="tb" bgcolor="#1D1E1C" align="center" width="490px">
+			<td id="head" align="center">Action Games</td>
+		</table><br />
+	<table align="center">
+		<td><table id="tb" bgcolor="#1D1E1C"><td><img src="images\vgame\action\hl1.jpg" border="1" height="100px" width="100px"></td></table></td>
+		<td><table id="tb2" bgcolor="#1D1E1C" width="485" height="108px"><td align="center"><a href="#" id="button" onClick="hl()">Half-Life</a></td></table></td>
+	</table>
+	<table align="center">
+		<td><table id="tb" bgcolor="#1D1E1C"><td><img src="images\vgame\action\hlop4.jpg" border="1" height="100px" width="100px"></td></table></td>
+		<td><table id="tb2" bgcolor="#1D1E1C" width="485" height="108px"><td align="center"><a href="#" id="button" onClick="hlopfor()">Half-Life : Opposing Forces</a></td></table></td>
+	</table>
+	<table align="center">
+		<td><table id="tb" bgcolor="#1D1E1C"><td><img src="images\vgame\action\hlbs.jpg" border="1" height="100px" width="100px"></td></table></td>
+		<td><table id="tb2" bgcolor="#1D1E1C" width="485" height="108px"><td align="center"><a href="#" id="button" onClick="hlbs()">Half-Life : Blue Shift</a></td></table></td>
+	</table>
+	<table align="center">
+		<td><table id="tb" bgcolor="#1D1E1C"><td><img src="images\vgame\action\hldec.jpg" border="1" height="100px" width="100px"></td></table></td>
+		<td><table id="tb2" bgcolor="#1D1E1C" width="485" height="108px"><td align="center"><a href="#" id="button" onClick="hldec()">Half-Life : Blue Shift</a></td></table></td>
+	</table>
+	<table align="center">
+		<td><table id="tb" bgcolor="#1D1E1C"><td><img src="images\vgame\action\hl2.jpg" border="1" height="100px" width="100px"></td></table></td>
+		<td><table id="tb2" bgcolor="#1D1E1C" width="485" height="108px"><td align="center"><a href="#" id="button" onClick="hl2()">Half-Life 2</a></td></table></td>
+	</table>
+	<table align="center">
+		<td><table id="tb" bgcolor="#1D1E1C"><td><img src="images\vgame\action\doom16.jpg" border="1" height="100px" width="100px"></td></table></td>
+		<td><table id="tb2" bgcolor="#1D1E1C" width="485" height="108px"><td align="center"><a href="#" id="button" onClick="doom16()">DOOM 2016</a></td></table></td>
+	</table>
+	<table align="center">
+		<td><table id="tb" bgcolor="#1D1E1C"><td><img src="images\vgame\action\doom20.jpg" border="1" height="100px" width="100px"></td></table></td>
+		<td><table id="tb2" bgcolor="#1D1E1C" width="485" height="108px"><td align="center"><a href="#" id="button" onClick="doom20()">DOOM Eternal</a></td></table></td>
+	</table><br /><br />
+		<table id="tb" bgcolor="#1D1E1C" align="center" width="490px">
+			<td id="head" align="center">Platformer Games</td>
+		</table><br />
+	<table align="center">
+		<td><table id="tb" bgcolor="#1D1E1C"><td><img src="images\vgame\platformer\smario.jpg" border="1" height="100px" width="100px"></td></table></td>
+		<td><table id="tb2" bgcolor="#1D1E1C" width="485" height="108px"><td align="center"><a href="#" id="button" onClick="smario()">Super Mario Bros.</a></td></table></td>
+	</table>
+	<table align="center">
+		<td><table id="tb" bgcolor="#1D1E1C"><td><img src="images\vgame\platformer\smashbro.jpg" border="1" height="100px" width="100px"></td></table></td>
+		<td><table id="tb2" bgcolor="#1D1E1C" width="485" height="108px"><td align="center"><a href="#" id="button" onClick="smashbro()">Super Smash Bros Ultimate</a></td></table></td>
+	</table>
+	<table align="center">
+		<td><table id="tb" bgcolor="#1D1E1C"><td><img src="images\vgame\platformer\sonic.jpg" border="1" height="100px" width="100px"></td></table></td>
+		<td><table id="tb2" bgcolor="#1D1E1C" width="485" height="108px"><td align="center"><a href="#" id="button" onClick="sonic()">Sonic Mania Plus</a></td></table></td>
+	</table><br /><br />
+		<table id="tb" bgcolor="#1D1E1C" align="center" width="490px">
+			<td id="head" align="center">Sandbox Games</td>
+		</table><br />
+	<table align="center">
+		<td><table id="tb" bgcolor="#1D1E1C"><td><img src="images\vgame\sandbox\smariomaker.jpg" border="1" height="100px" width="100px"></td></table></td>
+		<td><table id="tb2" bgcolor="#1D1E1C" width="485" height="108px"><td align="center"><a href="#" id="button" onClick="smariomaker()">Super Mario Maker</a></td></table></td>
+	</table>
+	<table align="center">
+		<td><table id="tb" bgcolor="#1D1E1C"><td><img src="images\vgame\sandbox\mc.jpg" border="1" height="100px" width="100px"></td></table></td>
+		<td><table id="tb2" bgcolor="#1D1E1C" width="485" height="108px"><td align="center"><a href="#" id="button" onClick="mc()">Minecraft</a></td></table></td>
+	</table>
+	<table align="center">
+		<td><table id="tb" bgcolor="#1D1E1C"><td><img src="images\vgame\sandbox\terraria.jpg" border="1" height="100px" width="100px"></td></table></td>
+		<td><table id="tb2" bgcolor="#1D1E1C" width="485" height="108px"><td align="center"><a href="#" id="button" onClick="terraria()">Terraria</a></td></table></td>
+	</table>
+	<table align="center">
+		<td><table id="tb" bgcolor="#1D1E1C"><td><img src="images\vgame\sandbox\gmod.jpg" border="1" height="100px" width="100px"></td></table></td>
+		<td><table id="tb2" bgcolor="#1D1E1C" width="485" height="108px"><td align="center"><a href="#" id="button" onClick="gmod()">Garry's Mod</a></td></table></td>
+	</table><br /><br />
+		<table id="tb" bgcolor="#1D1E1C" align="center" width="490px">
+			<td id="head" align="center">Simulation Games</td>
+		</table><br />
+	<table align="center">
+		<td><table id="tb" bgcolor="#1D1E1C"><td><img src="images\vgame\simulation\acnh.jpg" border="1" height="100px" width="100px"></td></table></td>
+		<td><table id="tb2" bgcolor="#1D1E1C" width="485" height="108px"><td align="center"><a href="#" id="button" onClick="acnh()">Animal Crossing : New Horizons</a></td></table></td>
+	</table>
+	<table align="center">
+		<td><table id="tb" bgcolor="#1D1E1C"><td><img src="images\vgame\simulation\citiesky.jpg" border="1" height="100px" width="100px"></td></table></td>
+		<td><table id="tb2" bgcolor="#1D1E1C" width="485" height="108px"><td align="center"><a href="#" id="button" onClick="citiesky()">Cities : Skylines</a></td></table></td>
+	</table>
+	<table align="center">
+		<td><table id="tb" bgcolor="#1D1E1C"><td><img src="images\vgame\simulation\unisand.png" border="1" height="100px" width="100px"></td></table></td>
+		<td><table id="tb2" bgcolor="#1D1E1C" width="485" height="108px"><td align="center"><a href="#" id="button" onClick="unisand()">Universe Sandbox<sup>2</sup></a></td></table></td>
+	</table>
+<br />
+	<center><table id="tb2" bgcolor="#1D1E1C">
+		<td><a id="return" href="#" onClick="placeorder()">Order Games Now!</a></td>
+	</table></center>
+	</td>
+</table>
+<script src="order.js"></script>
+</body>
+</html>

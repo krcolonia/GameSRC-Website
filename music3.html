@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<hmtl>
+	<head>
+		<style>
+		@font-face { 
+		font-family:CoolveticaRg-Regular;
+		src:url('coolvetica rg.ttf');
+		} 
+		img{
+		border-radius:10px;
+		}
+		marquee {
+		font-family:CoolveticaRg-Regular;
+		color:#33D9EC;
+		font-size:20px;
+		text-shadow:-1px 0 black,0 1px black,1px 0 black,0 -1px black;
+		}
+		p {
+		font-family:CoolveticaRg-Regular;
+		color:#33D9EC;
+		font-size:20px;
+		text-shadow:-1px 0 black,0 1px black,1px 0 black,0 -1px black;
+		}
+		td {
+		font-family:CoolveticaRg-Regular;
+		padding:3px;
+		}
+		#one {
+		width:240px;
+		border-radius:10px;
+		height:344px;
+		box-shadow:2px 2px 3px;
+		}
+		#two {
+		border-radius:10px;
+		border-style:outset;
+		box-shadow:2px 2px 3px;
+		}
+		#tb2 {
+		border-style:solid;
+		border-width:1px;
+		border-color:black;
+		border-radius:10px;
+		box-shadow:2px 2px 3px;
+		}
+		#tb2:hover {
+		background-color:#303032;
+		}
+		</style>
+	</head>
+<body>
+<table id="one" bgcolor="#1D1E1C">
+<td>
+<marquee behavior="scroll" direction="left">Alan Walker - Force (NCS Release)</marquee>
+<center><img id="logo" src="music_play.gif" style="width:150px;"></center>
+<audio id="force" src="force.mp3" autoplay loop></audio>
+<script>
+var aud = document.getElementById("force");
+aud.onended = function() {
+  var myWindow = window.open("music.html", "_self");
+};
+</script> 
+<center>
+  <a href="music2.html"><img src="images/prevbutton.png" height="50px"></a>
+  <a href="#"><img src="images/playbutton.png" height="50px" class="button" onclick="document.getElementById('force').play(); document.getElementById('logo').src='music_play.gif';"></img></a>
+  <a href="#"><img src="images/stopbutton.png" height="50px" class="button" onclick="document.getElementById('force').pause(); document.getElementById('logo').src='music_stop.png';"></img></a>
+  <a href="music.html"><img src="images/nextbutton.png" height="50px"></a>
+</center>
+</td>
+</table>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<title>Log In</title>
+	</head>
+	<style>
+		body {
+		background-image:linear-gradient(#3d4242,lightgray);
+		}
+		@font-face { 
+		font-family:CoolveticaRg-Regular;
+		src:url('coolvetica rg.ttf');
+		} 
+		td {
+		padding:10;
+		font-family:CoolveticaRg-Regular;
+		}
+		#sub {
+		padding:5;
+		font-family:CoolveticaRg-Regular;
+		border-radius:3px;
+		}
+		#inp {
+		margin:4;
+		}
+		#head {
+		padding:5;
+		font-family:CoolveticaRg-Regular;
+		font-size:35px;
+		color:#33D9EC;
+		text-shadow:-1px 0 black,0 1px black,1px 0 black,0 -1px black;
+		}
+		#namepass {
+		font-family:CoolveticaRg-Regular;
+		color:#33D9EC;
+		text-shadow:-1px 0 black,0 1px black,1px 0 black,0 -1px black;
+		}
+		#tb {
+		border-radius:15px;
+		box-shadow:2px 2px 3px;
+		}
+	</style>
+<body>
+	<table id="tb" width="650" align="center" bgcolor="#1D1E1C">
+		<td><center id="head">Log In</center></td>
+	<ul>
+	<form method="POST" action="home.html" name="form1" onSubmit="submit verify()" target="_parent">
+
+	</table><br /><br />
+
+	<center><table id="tb" width="450px" height="250px" align="center" bgcolor="#1D1E1C">
+		<td><li><label id="namepass" for="username">Username:</label><br /></li>
+			<input type="text" required="required" name="Name" placeholder="Username"><br /><br />
+		<li><label id="namepass" for="password">Password:</label><br /></li>
+			<input type="password" required="required" name="Password" placeholder="Password"><br /><br />
+		<input id="sub" type="submit" value="Log In!"><br />
+	</table></center>
+</body>
+</html>

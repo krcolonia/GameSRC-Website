@@ -1,0 +1,73 @@
+ <html>
+	<head>
+		<title>Registration Form</title>
+	</head>
+	<style>
+		body {
+		background-image:linear-gradient(#3d4242,lightgray);
+		}
+		@font-face { 
+		font-family:CoolveticaRg-Regular;
+		src:url('coolvetica rg.ttf');
+		} 
+		td {
+		padding:10;
+		font-family:CoolveticaRg-Regular;
+		}
+		#sub {
+		padding:5;
+		font-family:CoolveticaRg-Regular;
+		border-radius:3px;
+		}
+		#inp {
+		margin:4;
+		}
+		#head {
+		padding:5;
+		font-family:CoolveticaRg-Regular;
+		font-size:35px;
+		color:#33D9EC;
+		text-shadow:-1px 0 black,0 1px black,1px 0 black,0 -1px black;
+		}
+		#formhead {
+		font-family:CoolveticaRg-Regular;
+		color:#33D9EC;
+		text-shadow:-1px 0 black,0 1px black,1px 0 black,0 -1px black;
+		}
+		#tb {
+		border-radius:15px;
+		box-shadow:2px 2px 3px;
+		}
+	</style>
+<body>
+	<table id="tb" width="650px" align="center" bgcolor="#1D1E1C"> 
+		<td><center id="head">Registration Form</center></td>
+	<ul>
+	<form method="POST" action="login.html" name="form1" onSubmit="submit verify()" target="_parent">
+
+	</table><br /><br />
+
+	<center><table id="tb" width="450px" height="250px" align="center" bgcolor="#1d1e1c">
+		<td>
+		<li><label id="formhead" for="userid">Username:</label><br /></li>
+			<input type="text" required="required" name="UserID" placeholder="Username"><br /><br />
+
+		<li><label id="formhead" for="email">E-mail:</label><br /></li>
+			<input type="text" required="required" name="E-mail" placeholder="sample.email@email.com"><br /><br />
+
+		<li><label id="formhead" for="password">Password:</label><br /></li>
+		<input type="password" required="required" name="Password" placeholder="Password"><br /><br />
+		<li><label id="formhead">Country</label><br /></li>
+			<select>
+			 	<option value="Default">Choose Country...</option>
+				<option value="US">USA</option>
+				<option value="UK">United Kingdom</option>
+				<option value="PH">Philippines</option>
+				<option value="JP">Japan</option>
+				<option value="KR">Korea</option>
+			</select><br /><br />
+		<input id="sub" type="submit" value="Submit!"><br /><br />
+		</td>
+	</table></center>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<title>Front Page</title>
+	</head>
+		<style>
+			@font-face { 
+			font-family:CoolveticaRg-Regular;
+			src:url('coolvetica rg.ttf');
+			} 
+			body {
+			background-image:linear-gradient(#3D4242,#A8ADB4);
+			}
+			#frame {
+			border-radius:10px;
+			box-shadow:2px 2px 3px;
+			}
+			#tb1 {
+			border-radius:10px;
+			box-shadow:2px 2px 3px;
+			}
+			#tb2 {
+			border-radius:10px;
+			box-shadow:2px 2px 3px;
+			}
+			#tb2:hover {
+			background-color:#303032;
+			}
+			a {
+			font-family:CoolveticaRg-Regular;
+			color:#33D9EC;
+			text-decoration:none;
+			padding:5px 5px;
+			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+			font-size:40px;
+			}
+			a:hover {
+			color:#2397A5;
+			}
+			#logsign {
+			border-radius:10px;
+			box-shadow:2px 2px 3px;
+			background-image:linear-gradient(#121013,black);
+			height:25px;
+			width:445px;
+			}
+		</style>
+		<body bgcolor="white">
+			<table align="center" width="900px">
+				<tr>
+				<td><table id="tb2" width="450px" bgcolor="#1D1E1C">
+				<td>
+					<table id="logsign">
+					<td><center><a href="login.html" target="_parent">Log In</a></center>
+					</td>
+					</table>
+				</td>
+				</table></td>
+				<td><table id="tb2" width="450px" bgcolor="#1D1E1C"><td><table id="logsign"><td><center><a href="register.html" target="_parent">Sign Up</a></center></td></table></td></table></td>
+				</tr>
+			</table><br /><br />
+
+			<table frame="void" align="center">
+				<td><iframe id="frame" src="frame.html" name="e" height="250" width="950px" target="f" frameborder="0"></iframe></td>
+			</table><br />
+		</body>
+</html>
